@@ -6,126 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afonso Li | PhD Student</title>
     <style>
+        /* General Styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
-        header {
-            background-color: #004080;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        a {
+            text-decoration: none;
+            color: #0056b3;
+            transition: color 0.3s ease;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header h2 {
-            margin-top: 10px;
-            font-size: 1.2em;
-            font-weight: 300;
-        }
-
-        main {
-            margin: 20px;
-        }
-
-        img {
-            display: block;
-            margin: 0 auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        section {
-            margin-bottom: 40px;
+        a:hover {
+            color: #003366;
         }
 
         h1, h2, h3 {
-            color: #004080;
+            color: #343a40;
         }
 
         p {
             font-size: 1.1em;
-            line-height: 1.6;
+            color: #495057;
         }
 
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #004080, #0056b3);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        header h2 {
+            margin-top: 10px;
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        /* Main Content */
+        main {
+            margin: 40px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #e9ecef;
+            margin: 40px 0;
+        }
+
+        /* Table */
         table {
             width: 100%;
             max-width: 600px;
             margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
             border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         table td {
-            padding: 12px;
+            padding: 15px;
             border-bottom: 1px solid #ddd;
         }
 
         table td strong {
             font-weight: bold;
+            color: #343a40;
         }
 
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ddd;
-            margin: 40px 0;
-        }
-
+        /* List Styling */
         ul {
-            list-style-type: square;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 0;
         }
 
         ul li {
             margin-bottom: 15px;
+            font-size: 1.1em;
         }
 
         ul li a {
-            text-decoration: none;
-            color: #004080;
+            font-weight: bold;
+            font-size: 1.1em;
         }
 
-        ul li a:hover {
-            text-decoration: underline;
+        ul li a::before {
+            content: "• ";
+            color: #0056b3;
+            font-size: 1.5em;
         }
 
+        /* Footer */
         footer {
+            background-color: #f1f1f1;
+            padding: 20px;
             text-align: center;
-            margin-top: 40px;
             font-size: 0.9em;
-            color: #666;
+            color: #6c757d;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Header Section -->
     <header>
         <h1>Afonso Li</h1>
         <h2>PhD Student at Institut Mathématiques de Bordeaux (IMB)</h2>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- About Section -->
         <section id="about">
-            <p>
-                <a href="https://www.math.u-bordeaux.fr/imb/spip.php?lang=fr" target="_blank">
-                    <img src="imb.png" alt="Institut Mathématiques de Bordeaux" width="250">
-                </a>
-            </p>
+            <a href="https://www.math.u-bordeaux.fr/imb/spip.php?lang=fr" target="_blank">
+                <img src="imb.png" alt="Institut Mathématiques de Bordeaux" width="250">
+            </a>
 
             <h1>About Me</h1>
             <p>
-                I am a PhD student in mathematics at the <a href="https://www.math.u-bordeaux.fr/imb/?lang=fr">Institut Mathématiques de Bordeaux (IMB)</a>, under the supervision of <a href="https://apelletm.pages.math.cnrs.fr/page-perso/"> Alice Pellet-Mary</a> and <a href="https://www.bweso.com/"> Benjamin Wesolowski</a>. My research focuses on lattices and their applications to cryptography.
+                I am a PhD student in mathematics at the <a href="https://www.math.u-bordeaux.fr/imb/?lang=fr">Institut Mathématiques de Bordeaux (IMB)</a>, under the supervision of <a href="https://apelletm.pages.math.cnrs.fr/page-perso/">Alice Pellet-Mary</a> and <a href="https://www.bweso.com/">Benjamin Wesolowski</a>. My research focuses on lattices and their applications to cryptography.
             </p>
             <p>
                 I hold a double BSc in Mathematics and Computer Science from Université Paris Cité and a master's degree in pure mathematics from Sorbonne Université. My research interests also include Number Theory, Algebraic Geometry, and Algebraic Cryptography.
@@ -133,19 +160,21 @@
         </section>
 
         <hr>
+
+        <!-- Check My CV Section -->
         <section id="check-my-cv">
             <h1>Check My CV</h1>
+            <p>You can find my detailed CV by clicking the link below:</p>
             <p>
-                You can find my detailed CV by clicking the link below:
-            </p>
-            <p>
-                <a href="AFONSO_LI_MFOCS_CV.pdf" target="_blank" style="font-size: 1.2em; font-weight: bold; color: #004080;">
+                <a href="AFONSO_LI_MFOCS_CV.pdf" target="_blank" style="font-size: 1.3em;">
                     Download My CV (PDF)
                 </a>
             </p>
         </section>
+
         <hr>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h1>Contact Information</h1>
             <table>
@@ -159,6 +188,8 @@
         </section>
 
         <hr>
+
+        <!-- Where to Find Section -->
         <section id="where-to-find">
             <h1>Where to Find Me</h1>
             <p>
@@ -167,22 +198,25 @@
                 Bureau 317
             </p>
         </section>
+
         <hr>
 
+        <!-- Research and Projects Section -->
         <section id="research">
             <h1>Research and Projects</h1>
             <ul>
-                <li><b><a href="M2_MEMOIRE.pdf">Sur la difficulté de module unique-SVP de rang 2</a></b> <br> Year 2 master thesis, supervised by Alice Pellet-Mary, IMB, 2023</li>
-                <li><b><a href="TER_ZETA_FUNCTION.pdf">Valeurs des fonctions Zêta des corps quadratiques réels aux entiers négatifs</a></b> <br> Year 1 master project, supervised by Pierre Charollois, Sorbonne Université, 2021</li>
-                <li><b><a href="PROJET.pdf">Eden growth model</a></b> <br> Year 3 mathematics and computer science project, Université de Paris, 2021</li>
-                <li><b><a href="https://gitlab.com/afonsoli225/netradio-in-c-and-java.git">Network programming, NETRADIO</a></b> <br> Year 3 computer science project, 2021</li>
-                <li><b><a href="https://gitlab.com/afonsoli225/postgresql-project.git">Ecommerce Database modelisation</a></b> <br> Year 3 computer science project, 2021</li>
-                <li><b><a href="https://gitlab.com/afonsoli225/aquavias_l2.git">Puzzle game, Aquavias</a></b> <br> Year 2 computer science project, 2020</li>
-                <li><b><a href="GPS.pdf">How the creation of the GPS allowed a much more precise localization</a></b> <br> Year 1 mathematics project, 2019</li>
+                <li><a href="M2_MEMOIRE.pdf">Sur la difficulté de module unique-SVP de rang 2</a> <br> Year 2 master thesis, supervised by Alice Pellet-Mary, IMB, 2023</li>
+                <li><a href="TER_ZETA_FUNCTION.pdf">Valeurs des fonctions Zêta des corps quadratiques réels aux entiers négatifs</a> <br> Year 1 master project, supervised by Pierre Charollois, Sorbonne Université, 2021</li>
+                <li><a href="PROJET.pdf">Eden growth model</a> <br> Year 3 mathematics and computer science project, Université de Paris, 2021</li>
+                <li><a href="https://gitlab.com/afonsoli225/netradio-in-c-and-java.git">Network programming, NETRADIO</a> <br> Year 3 computer science project, 2021</li>
+                <li><a href="https://gitlab.com/afonsoli225/postgresql-project.git">Ecommerce Database modelisation</a> <br> Year 3 computer science project, 2021</li>
+                <li><a href="https://gitlab.com/afonsoli225/aquavias_l2.git">Puzzle game, Aquavias</a> <br> Year 2 computer science project, 2020</li>
+                <li><a href="GPS.pdf">How the creation of the GPS allowed a much more precise localization</a> <br> Year 1 mathematics project, 2019</li>
             </ul>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Afonso Li | PhD Student | Institut Mathématiques de Bordeaux</p>
     </footer>
