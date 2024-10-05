@@ -35,11 +35,20 @@
             color: #495057;
         }
 
-        img {
-            display: block;
-            margin: 20px auto;
+        /* Image Container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 250px;
+            height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            margin: 0 15px;
         }
 
         /* Header */
@@ -142,20 +151,22 @@
         <h2>PhD Student at Institut Mathématiques de Bordeaux (IMB)</h2>
     </header>
 
-    <!-- Personal Photo Section -->
-    <section id="personal-photo">
-        <a href="id.jpg" target="_blank">
-            <img src="id.jpg" alt="Afonso Li" width="200">
-        </a>
+    <!-- Personal Photo and IMB Image Section -->
+    <section id="image-section">
+        <div class="image-container">
+            <a href="your-photo.jpg" target="_blank">
+                <img src="your-photo.jpg" alt="Afonso Li">
+            </a>
+            <a href="https://www.math.u-bordeaux.fr/imb/spip.php?lang=fr" target="_blank">
+                <img src="imb.png" alt="Institut Mathématiques de Bordeaux">
+            </a>
+        </div>
     </section>
+
     <!-- Main Content -->
     <main>
         <!-- About Section -->
         <section id="about">
-            <a href="https://www.math.u-bordeaux.fr/imb/spip.php?lang=fr" target="_blank">
-                <img src="imb.png" alt="Institut Mathématiques de Bordeaux" width="250">
-            </a>
-
             <h1>About Me</h1>
             <p>
                 I am a PhD student in mathematics at the <a href="https://www.math.u-bordeaux.fr/imb/?lang=fr">Institut Mathématiques de Bordeaux (IMB)</a>, under the supervision of <a href="https://apelletm.pages.math.cnrs.fr/page-perso/">Alice Pellet-Mary</a> and <a href="https://www.bweso.com/">Benjamin Wesolowski</a>. My research focuses on lattices and their applications to cryptography.
