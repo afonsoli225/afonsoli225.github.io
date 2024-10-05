@@ -1,65 +1,169 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-<!-- The title tag is also shown in browser's tab-->
-<title>Afonso Li | PhD Student</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afonso Li | PhD Student</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2, h3 {
+            color: #004080;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table td strong {
+            font-weight: bold;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #004080;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 
-
 <body>
-<p>
-<!-- Replace with a personal image if desired -->
-<img src="imb.png" width="300" >
-</p>
-<h1>
-Afonso Li
-</h1>
-<h2>
-PhD at Institut Mathématiques de Bordeaux (IMB)
-</h2>
-<h1>
-Contact
-</h1>
-<table>
-<tr><td><bold>Email:</bold> afonso.li@math.u-bordeaux.fr</td> </tr>
-<tr><td><bold>Phone:</bold> +33 0664511454</td> </tr>
-</tr>
-</table>
-<hr>
-<h1>
-Overview
-</h1>
-<p>
-        I just started my PhD in mathematics under the supervision of Alice Pellet-Mary and Benjamin Wesolowski, focusing on lattices and their applications to cryptography.
-        I completed my undergraduate studies at Université Paris Cité (formerly Paris Diderot), where I earned a double BSc in Mathematics and Computer Science. I obtained my master's degree in pure mathematics from Sorbonne Université.
-        My research interests include Number Theory, Algebraic Geometry, and Algebraic Cryptography.
-<p>
-Find a short CV <a href="AFONSO_LI_MFOCS_CV.pdf">here</a>, and feel free to get in contact for more detail.
-</p>
 
-<hr>
-<!-- this is an h1 heading, largest-->
-<h1>
-Research and projects in French	
-</h1>
-<p>
-<ul style="list-style-type:square;">
-<li><b><a href="M2_MEMOIRE.pdf">Sur la difficulté de module unique-SVP de rang 2</a></b> <br> Year 2 master of mathematics thesis supervised by Alice Pellet-Mary, IMB, 2023</li>
+    <header>
+        <h1>Afonso Li</h1>
+        <h2>PhD Student at Institut Mathématiques de Bordeaux (IMB)</h2>
+    </header>
 
-<li><b><a href="TER_ZETA_FUNCTION.pdf">Valeurs des fonctions Zêta des corps quadratiques réels aux entiers négatifs</a></b> <br> Year 1 master of mathematics  project supervised by Pierre Charollois, Sorbonne Université. 2021</li>
-<li><b><a href="PROJET.pdf">Eden growth model</a></b> <br> Year 3 mathematics and computer science project supervised by Cyrille Lucas, Université de Paris. 2021</li> 
-<li><b><a href="https://gitlab.com/afonsoli225/netradio-in-c-and-java.git">Network programming, NETRADIO</a></b> <br>Year 3 computer science project. 2021 </li>
-<li><b><a href="https://gitlab.com/afonsoli225/postgresql-project.git">Ecommerce Database modelisation</a></b> <br>Year 3 computer science project. 2021</li>
-<li><b><a href="https://gitlab.com/afonsoli225/aquavias_l2.git">Puzzle game, Aquavias</a></b> <br>Year 2 computer science project. 2020</li>
-<li><b><a href="GPS.pdf">How the creation of the GPS allowed a much more precise localization</a></b> <br>Year 1 mathematics project. 2019</li>
+    <main>
+        <section id="about">
+            <p>
+                <img src="imb.png" alt="Afonso Li" width="250">
+            </p>
 
-</ul>
-</p>
+            <h1>About Me</h1>
+            <p>
+                I am a PhD student in mathematics at the Institut Mathématiques de Bordeaux (IMB), under the supervision of Alice Pellet-Mary and Benjamin Wesolowski. My research focuses on lattices and their applications to cryptography.
+            </p>
+            <p>
+                I hold a double BSc in Mathematics and Computer Science from Université Paris Cité and a master's degree in pure mathematics from Sorbonne Université. My research interests include Number Theory, Algebraic Geometry, and Algebraic Cryptography.
+            </p>
+        </section>
 
+        <hr>
 
-</p>
-</p>
+        <section id="contact">
+            <h1>Contact Information</h1>
+            <table>
+                <tr>
+                    <td><strong>Email:</strong> afonso.li@math.u-bordeaux.fr</td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong> +33 0664511454</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="research">
+            <h1>Research and Projects</h1>
+            <ul>
+                <li><b><a href="M2_MEMOIRE.pdf">Sur la difficulté de module unique-SVP de rang 2</a></b> <br> Year 2 master thesis, supervised by Alice Pellet-Mary, IMB, 2023</li>
+                <li><b><a href="TER_ZETA_FUNCTION.pdf">Valeurs des fonctions Zêta des corps quadratiques réels aux entiers négatifs</a></b> <br> Year 1 master project, supervised by Pierre Charollois, Sorbonne Université, 2021</li>
+                <li><b><a href="PROJET.pdf">Eden growth model</a></b> <br> Year 3 mathematics and computer science project, Université de Paris, 2021</li>
+                <li><b><a href="https://gitlab.com/afonsoli225/netradio-in-c-and-java.git">Network programming, NETRADIO</a></b> <br> Year 3 computer science project, 2021</li>
+                <li><b><a href="https://gitlab.com/afonsoli225/postgresql-project.git">Ecommerce Database modelisation</a></b> <br> Year 3 computer science project, 2021</li>
+                <li><b><a href="https://gitlab.com/afonsoli225/aquavias_l2.git">Puzzle game, Aquavias</a></b> <br> Year 2 computer science project, 2020</li>
+                <li><b><a href="GPS.pdf">How the creation of the GPS allowed a much more precise localization</a></b> <br> Year 1 mathematics project, 2019</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Afonso Li | PhD Student | Institut Mathématiques de Bordeaux</p>
+    </footer>
 
 </body>
+
 </html>
-
-
