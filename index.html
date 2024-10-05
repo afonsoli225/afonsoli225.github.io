@@ -44,11 +44,19 @@
         }
 
         .image-container img {
-            width: 250px;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
             margin: 0 15px;
+        }
+
+        /* Specific Image Sizes */
+        .personal-photo {
+            width: 150px; /* Smaller photo size */
+        }
+
+        .imb-photo {
+            width: 250px; /* IMB image size */
         }
 
         /* Header */
@@ -155,10 +163,10 @@
     <section id="image-section">
         <div class="image-container">
             <a href="id.jpg" target="_blank">
-                <img src="id.jpg" alt="Afonso Li">
+                <img class="personal-photo" src="id.jpg" alt="Afonso Li">
             </a>
             <a href="https://www.math.u-bordeaux.fr/imb/spip.php?lang=fr" target="_blank">
-                <img src="imb.png" alt="Institut Mathématiques de Bordeaux">
+                <img class="imb-photo" src="imb.png" alt="Institut Mathématiques de Bordeaux">
             </a>
         </div>
     </section>
