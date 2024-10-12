@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afonso Li | PhD Student</title>
     <link rel="icon" type="image/x-icon" href="jotaro.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         a {
             text-decoration: none;
-            color: #0056b3;
-            transition: color 0.3s ease;
+            color: #007bff;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         a:hover {
-            color: #003366;
+            color: #0056b3;
+            transform: translateY(-2px);
         }
 
         h1, h2, h3 {
-            color: #343a40;
+            color: #222;
+            font-weight: 700;
         }
 
         p {
-            font-size: 1.1em;
-            color: #495057;
+            font-size: 1.15em;
+            color: #555;
         }
 
         /* Image Container */
@@ -41,46 +44,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         .image-container img {
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-            margin: 0 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
         }
 
-        /* Specific Image Sizes */
-        .personal-photo {
-            width: 150px; /* Smaller photo size */
-        }
-
-        .imb-photo {
-            width: 250px; /* IMB image size */
+        .image-container img:hover {
+            transform: scale(1.05);
         }
 
         /* Header */
         header {
-            background: linear-gradient(to right, #004080, #0056b3);
+            background: linear-gradient(135deg, #007bff, #00c6ff);
             color: white;
-            padding: 40px;
+            padding: 60px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             position: relative;
         }
 
         header h1 {
             margin: 0;
             color: white;
-            font-size: 3em;
-            font-weight: bold;
+            font-size: 3.5em;
         }
 
         header h2 {
-            margin-top: 10px;
-            color: white;
-            font-size: 1.5em;
+            margin-top: 20px;
+            color: #f1f1f1;
+            font-size: 1.75em;
             font-weight: 300;
         }
 
@@ -88,46 +85,47 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            width: 100px;
+            width: 120px;
             height: auto;
         }
 
         /* Main Content */
         main {
-            margin: 40px auto;
+            margin: 50px auto;
             max-width: 1200px;
-            padding: 0 20px;
+            padding: 0 30px;
         }
 
         section {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
         }
 
         hr {
             border: 0;
             height: 2px;
-            background: #e9ecef;
-            margin: 40px 0;
+            background: #ddd;
+            margin: 50px 0;
         }
 
         /* Table */
         table {
             width: 100%;
             max-width: 600px;
-            margin: 20px auto;
+            margin: 30px auto;
             background-color: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            border-collapse: collapse;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         table td {
-            padding: 15px;
+            padding: 20px;
             border-bottom: 1px solid #ddd;
         }
 
         table td strong {
             font-weight: bold;
-            color: #343a40;
+            color: #333;
         }
 
         /* List Styling */
@@ -137,28 +135,69 @@
         }
 
         ul li {
-            margin-bottom: 15px;
-            font-size: 1.1em;
+            margin-bottom: 20px;
+            font-size: 1.2em;
         }
 
         ul li a {
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.2em;
+            color: #007bff;
         }
 
         ul li a::before {
             content: "• ";
-            color: #0056b3;
+            color: #007bff;
             font-size: 1.5em;
         }
 
         /* Footer */
         footer {
-            background-color: #f1f1f1;
-            padding: 20px;
+            background-color: #222;
+            padding: 30px;
             text-align: center;
             font-size: 0.9em;
-            color: #6c757d;
+            color: #f1f1f1;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #00c6ff;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        /* Footer social icons */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #f1f1f1;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #00c6ff;
+        }
+        .personal-photo {
+            width: 150px; /* Adjusted to make the photo smaller */
+            border-radius: 50%; /* Optional: Makes the photo circular */
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .imb-photo {
+            width: 200px; /* Adjusted to make the IMB logo bigger */
+            height: auto;
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
@@ -176,12 +215,12 @@
 
     <!-- Personal Photo and IMB Image Section -->
     <section id="image-section">
-        <div class="image-container">
-            <a href="id.jpg" target="_blank">
-                <img class="personal-photo" src="id.jpg" alt="Afonso Li">
-            </a>
-        </div>
-    </section>
+    <div class="image-container">
+        <a href="id.jpg" target="_blank">
+            <img class="personal-photo" src="id.jpg" alt="Afonso Li">
+        </a>
+    </div>
+</section>
 
     <!-- Main Content -->
     <main>
@@ -256,6 +295,11 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Afonso Li | PhD Student | Institut Mathématiques de Bordeaux</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
     </footer>
 
 </body>
