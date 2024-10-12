@@ -67,18 +67,29 @@
             padding: 40px;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         header h1 {
             margin: 0;
+            color: white;
             font-size: 3em;
             font-weight: bold;
         }
 
         header h2 {
             margin-top: 10px;
+            color: white;
             font-size: 1.5em;
             font-weight: 300;
+        }
+
+        header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
         }
 
         /* Main Content */
@@ -156,6 +167,9 @@
 
     <!-- Header Section -->
     <header>
+        <a href="https://www.math.u-bordeaux.fr/imb/spip.php?lang=fr" target="_blank">
+                <img class="imb-photo" src="imb.png" alt="Institut Mathématiques de Bordeaux">
+        </a>
         <h1>Afonso Li</h1>
         <h2>PhD Student at Institut Mathématiques de Bordeaux (IMB)</h2>
     </header>
@@ -165,9 +179,6 @@
         <div class="image-container">
             <a href="id.jpg" target="_blank">
                 <img class="personal-photo" src="id.jpg" alt="Afonso Li">
-            </a>
-            <a href="https://www.math.u-bordeaux.fr/imb/spip.php?lang=fr" target="_blank">
-                <img class="imb-photo" src="imb.png" alt="Institut Mathématiques de Bordeaux">
             </a>
         </div>
     </section>
